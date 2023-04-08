@@ -114,12 +114,40 @@
   <section class="about_section layout_padding">
     <h1 class="text-center">Weight Converter</h1>
     <div class="container container1">
-      <div class="input-container">
-        <label for="pounds">Pounds:</label>
-        <input type="number" id="input" class="input" step=".1" placeholder="Enter number">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <form>
+            <div class="form-group">
+              <input id="lbsinput" type="number" class="form-control form-control-lg" placeholder="Enter Pounds...">
+            </div>
+          </form>
+
+          <div id="output">
+            <div class="card bg-primary mb-2">
+              <div class="card-block">
+                <h4>Grams:</h4>
+                <div id="gramsoutput"></div>
+              </div>
+            </div>
+
+            <div class="card bg-success mb-2">
+              <div class="card-block ">
+                <h4>KiloGrams:</h4>
+                <div id="kgoutput"></div>
+              </div>
+            </div>
+
+            <div class="card bg-danger mb-2">
+              <div class="card-block">
+                <h4>ounce:</h4>
+                <div id="ozeoutput"></div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
       </div>
-      <p>Your weight in kg is: <span id="result"></span></p>
-      <p class="error" id="error"></p>
     </div>
   </section>
   <section class="about_section layout_padding">
